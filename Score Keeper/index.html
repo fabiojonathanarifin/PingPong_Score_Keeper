@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="app.css">
+    
+    <title>Score Keeper</title>
+</head>
+<body>
+    <div class="columns is-centered">
+        <div class="box column is-one-third" id="frame">
+            <div>
+                <figure class="image is-4by3">
+                    <img src="https://media.istockphoto.com/photos/table-tennis-equipment-picture-id1192307192?k=20&m=1192307192&s=612x612&w=0&h=HsYztTcYQjNNOKcAKvhXGNc3sPmVhK-Dmyv0TyNd_rY=" alt="pingpong">
+                </figure>
+            </div>
+            <p><b><span>Ping Pong Score Keeper</span></b></p>
+            <div class="content" id="mar">
+                <h1><span id="p1Score">0</span> to <span id="p2Score">0</span></h1>
+            </div>
+            <p><span>Use the buttons below to keep score.</span></p>
+            <form action="/nowhere">
+                <label for="maxScore"><b><span>Playing To: </span></b></label>
+                <div class="select is-small is-rounded">
+                    <select name="maxScore" id="maxScore">
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                    </select>
+                </div>
+            </form>
+            <div class="has-text-centered" id="mar">
+                <button class="button is-primary" id="p1Button">+1 Player One</button>
+                <button class="button is-info" id="p2Button">+1 Player Two</button>
+                <button class="button is-danger" id="reset">Reset</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>

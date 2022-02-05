@@ -1,0 +1,57 @@
+
+
+#frame {
+    text-align: center;
+    align-items: center;
+    box-shadow: 5px 5px 10px gray;
+    margin-top: 40px;
+}
+
+
+#mar {
+    margin: 8px;
+}
+
+h1 {
+    margin-bottom: 0px;
+}
+
+/* class for green score  */
+.greenScore {
+    color: green;
+}
+
+/* class for red score */
+.redScore {
+    color: red;
+}
+
+/* class for black score */
+.blackScore {
+    color: black;
+}
+
+button {
+    transition: box-shadow 0.5s, border-radius 2s, transform 0.5s;
+}
+
+button:hover {
+    border-radius: 18px;
+    box-shadow: 0 0.5em 1em -0.4em rgb(54, 54, 54);
+    transform: translateY(-0.2em);
+    cursor: pointer;
+}
+
+.winner {
+    transition: color .7s;
+    color: hsl(141, 53%, 53%);
+}
+
+.loser {
+    transition: color .7s;
+    color: hsl(348, 100%, 61%);
+}
+
+/* #default {
+
+} */
